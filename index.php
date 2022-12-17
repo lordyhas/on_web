@@ -781,7 +781,7 @@ $exp_year = 4;
 							<div class="project" style="background-image: url(images/anpr.jpeg);">
 								<div class="desc">
 									<div class="con">
-										<h3><a href="/blog/abstract?id=alpr_abstract" target="_blanc">Computer Vision : License Plate Recognition </a></h3>
+										<h3><a href="/blog/abstract?id=alpr_abstract">Computer Vision : License Plate Recognition </a></h3>
 										<span>A Machine Learning ANPR Application (In progress)
 											<li> Library (package) can be include in real app</li>
 											<li> Independent</li>
@@ -838,7 +838,7 @@ $exp_year = 4;
 							<div class="project" style="background-image: url(images/project_stats_1.jpeg);">
 								<div class="desc">
 									<div class="con">
-										<h3><a target="_blank" href="https://github.com/lordyhas/python_scientific_calculus" target="_blanc">L2CS21 </a></h3>
+										<h3><a href="https://github.com/lordyhas/python_scientific_calculus" target="_blanc">L2CS21 </a></h3>
 										<span>Calcul Scientifique App
 											<ul>
 												<li> Solve Statistics problem</li>
