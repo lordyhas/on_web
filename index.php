@@ -381,7 +381,7 @@ $exp_year = 4;
 								</span>
 								<div class="desc">
 									<h3>Embedded System</h3>
-									<p>Programming of Arduino and Raspberry microcontrollers with C++ and Python.</p>
+									<p>Arduino and Raspberry Programming with C++ and Python.</p>
 								</div>
 							</div>
 						</div>
