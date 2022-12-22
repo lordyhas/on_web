@@ -193,7 +193,11 @@ $exp_year = 4;
 									   <div class="desc">
 						   					<h1 style="color: #fff;">I am a <br>Software Developer</h1>
 												<h2>@lordyhas <i class="icon-github"></i></h2>
-												<p><a href="/download/portofolio-cv.pdf" downoload="Hassan_CV" style="border: 1px solid #fff; color: #fff;" class="btn btn-primary btn-learn" >Download CV <i class="icon-download4"></i> </a></p>
+												<p>
+													<a href="/download/portofolio-cv.pdf" downoload="Hassan_CV" style="border: 1px solid #fff; color: #fff;" class="btn btn-primary btn-learn" >
+														Download CV <i class="icon-download4"></i> 
+													</a>
+												</p>
 										</div>
 					   				</div>
 					   			</div>
