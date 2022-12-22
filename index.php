@@ -152,7 +152,7 @@ $exp_year = 4;
 				<ul class="text-secondary">
 					<li><a href="https://github.com/lordyhas"><i class="text-secondary icon-github"></i></a></li>
 					<li><a href="https://twitter.com/lordyhas"><i class="text-secondary icon-twitter2"></i></a></li>
-					<li><a href="#"><i class="text-secondary icon-linkedin2"></i></a></li>
+					<!--li><a href="#"><i class="text-secondary icon-linkedin2"></i></a></li-->
 					<li><a href="https://instagram.com/lordyhas"><i class="text-secondary icon-instagram"></i></a></li>
 				</ul>
 			</div>
