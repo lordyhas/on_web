@@ -22,6 +22,75 @@
     <body style="background-color: #dadaef;">
         <!-- Navigation-->
         <?php include_once("header.topbar.php") ?>
+
+        <div id="myModal" class="modal" style="z-index: 1500;">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="card">
+                    <span class="close text-danger ml-1">&times; <small class=""></small></span>
+                    <div class="card-body">
+                        <h5 class="card-title text-info">Bienvenue sur Horizons Online Classroom</h5>
+                        <p class="card-text text-info">
+                            Pour plus de securité de votre compte nous vous connseillons 
+                            de verifer vos informations de profile, si elle sont bien remplies <br/>
+                            Vous pouvez toujours verifier en cliquant sur le bouton 
+                            <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+                            <i class="fa fa-gear border rounded-circle p-2"></i> 
+                            paramètre
+                        </p>
+                        
+                        <a href="profile.set.php"><div class="btn btn-outline-success">Verifier mes informations</div></a>
+                        <div class="c-tooltip"><div class="btn btn-outline-danger">
+                            Une autre fois
+                            <span class="c-tooltiptext">cliquez sur close</span>
+                        </div></div>
+                        
+                    </div>
+                </div> <!-- .card --> 
+            </div>
+        </div>
+
+        <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
+
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on the button, open the modal
+                btn.onclick = function() {
+                    modal.style.display = "block";
+                }
+                //modal.style.display = "block";// decommenter pour l'affichage auto
+                <?php 
+                    if(isset($_GET['newsave']) && $_GET['newsave']=="new"){
+                    //echo "";
+                    //echo "++++++++++++++=====+++++<br><br><br><br><br><br><br><br>";
+                    ?>
+                    
+                        var modal = document.getElementById("myModal");
+                        modal.style.display = 'block';
+                    
+                    <?php
+                    }
+                    
+                ?>
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                    modal.style.display = "none";
+                    }
+                } 
+        </script> 
         
         <!-- Page Header-->
         <header class="masthead" style="background-image: url('/images/cover-bg-4.jpeg')">
