@@ -474,3 +474,4 @@ composer.lock
 
 --home.php
 --*.php
+--*.html

@@ -16,18 +16,21 @@
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/blog.styles.css" rel="stylesheet" />
-        <link rel="stylesheet"  href="/contents/css/blog.styles.css"  type="text/css" />
+
+        <link href="/contents/css/blog.styles.css" rel="stylesheet" type="text/css" />
+        <link href="/css/modal.style.css" rel="stylesheet" type="text/css" />
+
     </head>
     <body style="background-color: #dadaef;">
         <!-- Navigation-->
         <?php include_once("header.topbar.php") ?>
-
-        <div id="myModal" class="modal" style="z-index: 1500;">
+        <div id="myModal" class="xmodal">
             <!-- Modal content -->
-            <div class="modal-content">
+            <div class="xmodal-content">
+                
+                <span class="close text-danger ml-1">&times; <small class=""></small></span>
                 <div class="card">
-                    <span class="close text-danger ml-1">&times; <small class=""></small></span>
+                    
                     <div class="card-body">
                         <h5 class="card-title text-info">Bienvenue sur Horizons Online Classroom</h5>
                         <p class="card-text text-info">
@@ -39,8 +42,8 @@
                             paramètre
                         </p>
                         
-                        <a href="profile.set.php"><div class="btn btn-outline-success">Verifier mes informations</div></a>
-                        <div class="c-tooltip"><div class="btn btn-outline-danger">
+                        <a href="profile.set.php"><div class="btn btn-outline-success">Verifier</div></a>
+                        <div class="close c-tooltip"><div class="btn btn-outline-danger">
                             Une autre fois
                             <span class="c-tooltiptext">cliquez sur close</span>
                         </div></div>
@@ -48,49 +51,17 @@
                     </div>
                 </div> <!-- .card --> 
             </div>
+
         </div>
 
-        <script>
-                // Get the modal
-                var modal = document.getElementById("myModal");
+        <!--div id="myModal" class="modal" style="z-index: 1500;">
+            < !-- Modal content -- > 
+            <div class="modal-content">
+                
+            </div>
+        </div-->
 
-                // Get the button that opens the modal
-                var btn = document.getElementById("myBtn");
-
-                // Get the <span> element that closes the modal
-                var span = document.getElementsByClassName("close")[0];
-
-                // When the user clicks on the button, open the modal
-                btn.onclick = function() {
-                    modal.style.display = "block";
-                }
-                //modal.style.display = "block";// decommenter pour l'affichage auto
-                <?php 
-                    if(isset($_GET['newsave']) && $_GET['newsave']=="new"){
-                    //echo "";
-                    //echo "++++++++++++++=====+++++<br><br><br><br><br><br><br><br>";
-                    ?>
-                    
-                        var modal = document.getElementById("myModal");
-                        modal.style.display = 'block';
-                    
-                    <?php
-                    }
-                    
-                ?>
-
-                // When the user clicks on <span> (x), close the modal
-                span.onclick = function() {
-                    modal.style.display = "none";
-                }
-
-                // When the user clicks anywhere outside of the modal, close it
-                window.onclick = function(event) {
-                    if (event.target == modal) {
-                    modal.style.display = "none";
-                    }
-                } 
-        </script> 
+        
         
         <!-- Page Header-->
         <header class="masthead" style="background-image: url('/images/cover-bg-4.jpeg')">
@@ -98,7 +69,7 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="site-heading">
-                            <h1>Blog</h1>   
+                            <h1>Blog</h1>  
                             <span class="subheading">A Blog by everyone</span>
                         </div>
                     </div>
@@ -115,7 +86,6 @@
                         <a href="/blog/abstract?id=alpr_abstract">
                             <h2 class="post-title">Study of the best stochastic gradient descent optimizers</h2>
                             <h3 class="post-subtitle">Solution applied in license plate recognition</h3>
-
                         </a>
                     
                         <p class="post-meta">
@@ -183,6 +153,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="/contents/js/blog.scripts.js"></script>
+
+        <script src="/js/modal.js"></script>
     </body>
 </html>
 

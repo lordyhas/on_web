@@ -41,7 +41,24 @@
                         <p>Hi, <b>I'm Lordy Hassan Kajila</b> Computer scientist, Numerician, Developer and Researcher evolving in 
                             Artificial Intelligence (Machine Learning & Computer Vision), and in Data Science. <br/>
                             What characterizes me is creativity. I put this skill to use in the development of software and multi-platform applications (Mobile, Web, Desktop) 
-                            for 4 years as a freelancer. 
+                            for 4 years as a freelancer. <br/>
+
+                            <ul style="list-style-type:none; padding: 0;">
+                                <li>I program with the languages : </li>
+                                <li>
+                                    <ul style="list-style-type:square; padding-left: 50px;">
+                            
+                                        <li>C/C++</li>
+                                        <li>Java/Kotlin (Android Studio)</li>
+                                        <li>Dart (Flutter)</li>
+                                        <li>JavaScript (HTML/CSS)</li>
+                                        <li>Php</li>
+                                        <li>Python</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                                 
+
                         </p>
                         
                         <p>I like coding, I know it's not a very original activity, but this hobby suits me perfectly. 

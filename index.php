@@ -14,48 +14,48 @@ $exp_year = 4;
 
 /// --- --- SECTION LIFE STASTISTICS PANEL (bg-images) --- ---
 				
-				$bg_coversx = array(
-					"cover-bg-3.jpeg",
-					"cover-keyboard.jpeg",//"cover-bg-1",
-					"cover-bg-2.jpg",
-					"cover-bg-4.jpeg",
-					"cover-keyboard.jpeg",
-					"cover-bg-3.jpeg",
-					"cover-keyboard.jpeg",
-					"cover-bg-2.jpeg",
-					"cover-keyboard.jpeg",
-				);
-				$i = date('w'); /// index of background images
+$bg_coversx = array(
+	"cover-bg-3.jpeg",
+	"cover-keyboard.jpeg",//"cover-bg-1",
+	"cover-bg-2.jpg",
+	"cover-bg-4.jpeg",
+	"cover-keyboard.jpeg",
+	"cover-bg-3.jpeg",
+	"cover-keyboard.jpeg",
+	"cover-bg-2.jpeg",
+	"cover-keyboard.jpeg",
+);
+$i = date('w'); /// index of background images
 				
 				
 /// --- --- SECTION LIFE STASTISTICS PANEL (stat) --- ---
 				
-				$year = date("Y");
-				$coc = 135; 
-				if($year > 2023 ){
-					$coc = 365 + $coc;
-				}else{
-					$coc = $coc + date("z");
-				}
+$year = date("Y");
+$coc = 135; 
+if($year > 2023 ){
+	$coc = 365 + $coc;
+}else{
+	$coc = $coc + date("z");
+}
 				
-				$projects = 5;
-				$clients = 19;
-				$parteners = 2; 
+$projects = 5;
+$clients = 19;
+$parteners = 2; 
 				
 /// --- --- SECTION MY SKILLS --- ---				
-	$skills = array(
-	    1 => ["Python", 90, 1],
-		["Java/Kotlin", 80, 2],
-		["HTML5/CSS", 90, 3],
-		["Flutter/Dart", 90, 4],
-		["C/C++", 90, 5],
-		["JavaScript", 40, 6],
-		//["Arduino", 70, 7],
-		["SQL", 60, 4],
-		["PHP", 70, 5]
-		//"" => ,
-		//"" => ,
-						); 
+$skills = array(
+	1 => ["Python", 90, 1],
+	["Java/Kotlin", 80, 2],
+	["HTML5/CSS", 90, 3],
+	["Flutter/Dart", 90, 4],
+	["C/C++", 90, 5],
+	["JavaScript", 40, 6],
+	//["Arduino", 70, 7],
+	["SQL", 60, 4],
+	["PHP", 70, 5]
+	//"" => ,
+	//"" => ,
+); 
 ?>
 
 
@@ -99,10 +99,14 @@ $exp_year = 4;
 	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 	<!-- Owl Carousel -->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
+
+	<link href="css/modal.style.css" rel="stylesheet" type="text/css" />
+
 	
 	
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -112,7 +116,69 @@ $exp_year = 4;
 	<![endif]-->
 
 	</head>
+
 	<body style="background-color: #dadaef;" > <!-- style="background-color: #dadaef;" -->
+
+	<div id="myModal" class="xmodal" style=" z-index: 15000;">
+            <!-- Modal content -->
+            <div class="xmodal-content">
+                
+                <span class="close text-danger ml-1">&times; <i class=""></i></span>
+                <div class="card">
+                    
+                    <div class="card-body">
+                        <h3 class="card-title text-info">My Contacts</h3>
+                        <p class="card-text text-info">
+                            I'm Sofware Developer : Web and Mobile app
+
+							<div class="col">
+								<div class="colorlib-feature colorlib-feature-sm">
+									<div class="colorlib-icon">
+										<i class="icon-mail"></i>
+									</div>
+									<div class="colorlib-text">
+										<p>
+											<a href="email://contact@hassankajila.com" style="text-decoration: none;"> contact@hassankajila.com</a> <br/>
+											<a href="email://dev.haspro@gmail.com" style="text-decoration: none;"> dev.haspro@gmail.com</a>
+										</p>
+									</div>
+								</div>
+
+								<div class="colorlib-feature colorlib-feature-sm ">
+									<div class="colorlib-icon">
+										<i class="icon-globe-outline"></i>
+									</div>
+									<div class="colorlib-text">
+										<!--p>Democratic Republic of Congo.</p-->
+										<p> 
+											<a href="https://twitter.com/lordyhas" target="_blank"> <i class="text-secondary icon-twitter2"></i> lordyhas</a> <br/>
+											<a href="https://instagram.com/lordyhas" target="_blank"> <i class="text-secondary icon-instagram"></i> lordyhas</a> <br/>
+										</p>
+									</div>
+								</div>
+
+								<div class="colorlib-feature colorlib-feature-sm">
+									<div class="colorlib-icon">
+										<i class="icon-phone"></i>
+									</div>
+									<div class="colorlib-text">
+										<p><a href="#" style="text-decoration: none;">Unknown</a></p>
+									</div>
+								</div>
+							</div>
+                        </p>
+                 
+                        <div class="btn btn-success">another time </div>
+						<a href="/download/Hassan_Kajila_CV-(Eng).pdf" downoload="HASSAN_KAJILA_CV" class="btn btn-primary btn-learn" >
+							Download CV <i class="icon-download4"></i> 
+						</a>
+                        
+                    </div>
+                </div> <!-- .card --> 
+            </div>
+
+    </div>
+
 	<div id="colorlib-page">
 		<div class="container-wrap">
 		<!--a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a-->
@@ -120,7 +186,7 @@ $exp_year = 4;
 		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
 			<div class="text-center">
 				<div class="author-img" style="background-image: url(images/img-lordyhas-1.jpg);"></div>
-				<h1 id="colorlib-logo"><a href="/home" style="text-decoration: none;";>Hassan Kajila<br/> <i>@lordyhas</i> </a></h1>
+				<h1 id="colorlib-logo"><a href="/home" style="text-decoration: none;">Hassan Kajila<br/> <i>@lordyhas</i> </a></h1>
 				<span class="position"><a href="#">Software-Developper</a>/KDynamic Lab</span>
 			</div>
 			<nav id="colorlib-main-menu" role="navigation" class="navbar">
@@ -159,6 +225,23 @@ $exp_year = 4;
 
 		</aside>
 
+		<!--  
+            <button onclick="openWin()">Open "myWindow"</button>
+            <button onclick="closeWin()">Close "myWindow"</button>
+        -->
+            
+        <script>
+            let myWindow;
+            
+            function openWin(str) {
+              myWindow = window.open(str, "", "width=1080,height=920");
+            }
+            
+            function closeWin() {
+              myWindow.close();
+            }
+        </script>
+
 		<div id="colorlib-main">
 
 			<section id="colorlib-hero" class="js-fullheight" data-section="home">
@@ -177,7 +260,7 @@ $exp_year = 4;
 						   					<h1 style="color: #fff;">Hi! <br>I'm Hassan K.</h1>
 											<h2>@lordyhas <i class="icon-twitter2"></i> </h2>
 						   					<!--h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2-->
-												<p ><a style="border: 1px solid #fff; color: #fff;" class="btn btn-learn ">View My profile <i class="icon-briefcase3"></i></a></p>
+												<p ><button onclick="openWin('/about')" style="border: 1px solid #fff; color: #fff;" class="btn btn-learn ">View My profile<i class="icon-briefcase3"></i></button></p>
 										</div>
 					   				</div>
 					   			</div>
@@ -194,7 +277,7 @@ $exp_year = 4;
 						   					<h1 style="color: #fff;">I am a <br>Software Developer</h1>
 												<h2>@lordyhas <i class="icon-github"></i></h2>
 												<p>
-													<a href="/download/portofolio-cv.pdf" downoload="Hassan_CV" style="border: 1px solid #fff; color: #fff;" class="btn btn-primary btn-learn" >
+													<a href="/download/Hassan_Kajila_CV -(Eng).pdf" downoload="HASSAN_KAJILA_CV" style="border: 1px solid #fff; color: #fff;" class="btn btn-primary btn-learn" >
 														Download CV <i class="icon-download4"></i> 
 													</a>
 												</p>
@@ -209,23 +292,6 @@ $exp_year = 4;
 			</section>
 
 			<!-- SECTION ABOUT ME -->
-
-			<!--  
-            <button onclick="openWin()">Open "myWindow"</button>
-            <button onclick="closeWin()">Close "myWindow"</button>
-            -->
-            
-            <script>
-            /*let myWindow;
-            
-            function openWin() {
-              myWindow = window.open("https://www.hassankajila.com", "", "width=1080,height=720");
-            }
-            
-            function closeWin() {
-              myWindow.close();
-            }*/
-            </script>
 
 			<section class="colorlib-about" data-section="about">
 				<div class="colorlib-narrow-content">
@@ -323,7 +389,7 @@ $exp_year = 4;
 											I am working as a freelance, and happy to tell you <br> 
 											that <?=$projects?>+ projects done successfully!
 										</h2>
-										<a href="#" class="btn-hire">Contact me</a>
+										<button style="background-color: #f9bf3f00;" id="openModal" class="btn-hire">Contact me</button>
 									</div>
 								</div>
 							</div> 
@@ -893,7 +959,7 @@ $exp_year = 4;
 					</div>
 					<div class="row">
 						<div class="col-md-12 animate-box">
-							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">More <i class="icon-reload"></i></a></p>
 						</div>
 					</div>
 				</div>
@@ -963,7 +1029,7 @@ $exp_year = 4;
 						<div class="col-md-5">
 							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
 								<div class="colorlib-icon">
-									<i class="icon-globe-outline"></i>
+									<i class="icon-mail"></i>
 								</div>
 								<div class="colorlib-text">
 									<p><a href="mail://" style="text-decoration: none;"> mail@hassankajila.com</a></p>
@@ -1112,6 +1178,7 @@ $exp_year = 4;
 	
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+	<script src="/js/modal.js"></script>
 
 	</body>
 </html>
