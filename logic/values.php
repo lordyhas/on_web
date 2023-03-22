@@ -1,12 +1,14 @@
 <?php 
 
+namespace values;
 class Contact{
 
-	public function mail(){
+	public function mail(): string
+    {
 		return "";
 	}
 
-	public $my_contact = array(
+	public array $my_contact = array(
 		"mail" => ['mail@hassankajila.com',"dev.haspro@gmail.com","mail@r.hassankajila.com"],
 		"phone" => [],
 		"address" => ["Congo - kinshasa"],
@@ -16,14 +18,11 @@ class Contact{
 
 
 class Link{
-    static $github = "https://github.com/lordyhas";
-    static $twitter = "https://twitter.com/lordyhas"; 
-    static $insta = "https://instagram.com/lordyhas"; 
-    static $linktree = "https://linktr.ee/hassankajila"; 
+    static string $github = "https://github.com/lordyhas";
+    static string $twitter = "https://twitter.com/lordyhas";
+    static string $insta = "https://instagram.com/lordyhas";
+    static string $linktree = "https://linktr.ee/hassankajila";
 
 }
 
 
-
-
-?>
