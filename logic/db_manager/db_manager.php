@@ -76,7 +76,7 @@ class  Properties {
 
     private function save_session_properties(): array {
         $sm = new SessionManager();
-        if($sm->is_logged() || $this->is_ready) {
+        //if($sm->is_logged() || $this->is_ready) {
             $index = self::table;
             $db_properties = $this->dbm->query_to_array("SELECT * FROM $index");
 
@@ -87,8 +87,8 @@ class  Properties {
             $_SESSION["$index"] = $properties;
             $this->is_ready = true;
             return $properties;
-        }
-        return [];
+        //}
+        //return [];
     }
 
     private function get_skills(): array {
