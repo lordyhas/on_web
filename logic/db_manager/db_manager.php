@@ -8,7 +8,7 @@ use mysqli as MySQL;
 class DatabaseManager{
     private MySQL $connection;
     function __construct() {
-        $servername = "hassankajila.com";
+        $servername = "localhost";
         $username = "u601424401_hassankajila";
         $password = "tZ=Y#0mR"; // %k)Qh$H&5ZUXiJw
         $dbname = "u601424401_hassan_db";
