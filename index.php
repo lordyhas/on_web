@@ -870,7 +870,7 @@ $skills = array(
 										</span>
                                         <p class="icon">
                                             <span><a href="#"><i class="icon-share3"></i></a></span>
-                                            <span><a href="#"><i class="icon-eye"></i> 152</a></span>
+                                            <span><a href="https://exploress.space/home"><i class="icon-eye"></i> 154</a></span>
                                             <span><a href="#"><i class="icon-heart"></i> 74</a></span>
                                         </p>
                                     </div>
@@ -893,7 +893,7 @@ $skills = array(
 										</span>
                                         <p class="icon">
                                             <span><a href="#"><i class="icon-share3"></i></a></span>
-                                            <span><a href="#"><i class="icon-eye"></i> 40</a></span>
+                                            <span><a href="https://xclassroom.hassankajila.com/"><i class="icon-eye"></i> 40</a></span>
                                             <span><a href="#"><i class="icon-heart"></i> 19</a></span>
                                         </p>
                                     </div>
@@ -913,7 +913,7 @@ $skills = array(
 										</span>
                                         <p class="icon">
                                             <span><a href="#"><i class="icon-share3"></i></a></span>
-                                            <span><a href="#"><i class="icon-eye"></i> 180</a></span>
+                                            <span><a href="/blog/abstract?id=alpr_abstract"><i class="icon-eye"></i> 182</a></span>
                                             <span><a href="#"><i class="icon-heart"></i> 49</a></span>
                                         </p>
                                     </div>
@@ -935,7 +935,7 @@ $skills = array(
 										</span>
                                         <p class="icon">
                                             <span><a href="#"><i class="icon-share3"></i></a></span>
-                                            <span><a href="#"><i class="icon-eye"></i> 62</a></span>
+                                            <span><a href="#"><i class="icon-eye"></i> 67</a></span>
                                             <span><a href="#"><i class="icon-heart"></i> 4</a></span>
                                         </p>
                                     </div>
@@ -973,7 +973,7 @@ $skills = array(
 										</span>
                                         <p class="icon">
                                             <span><a href="#"><i class="icon-share3"></i></a></span>
-                                            <span><a href="#"><i class="icon-eye"></i> 78</a></span>
+                                            <span><a href="https://github.com/lordyhas/python_scientific_calculus"><i class="icon-eye"></i> 79</a></span>
                                             <span><a href="#"><i class="icon-heart"></i> 39</a></span>
                                         </p>
                                     </div>
