@@ -20,7 +20,7 @@ if($session->is_logged()){
 
 $prop_object = new Properties();
 
-$properties = $prop_object->get_properties();
+//$properties = $prop_object->get_properties();
 
 
 $exp_year = $prop_object->expertise_year();

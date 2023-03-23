@@ -74,7 +74,8 @@ class  Properties {
         $this->save_session_properties();
     }
 
-    private function save_session_properties(): array {
+    private function save_session_properties(): void
+    {
         $sm = new SessionManager();
         //if($sm->is_logged() || $this->is_ready) {
             $index = self::table;
@@ -86,7 +87,6 @@ class  Properties {
             }
             $_SESSION["$index"] = $properties;
             $this->is_ready = true;
-            return $properties;
         //}
         //return [];
     }
