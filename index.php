@@ -23,7 +23,11 @@ $prop_object = new Properties();
 $properties = $prop_object->get_properties();
 
 
-$exp_year = 4;
+$exp_year = $prop_object->expertise_year();
+
+$projects = $prop_object->project();
+$clients = $prop_object->client();
+$partners = $prop_object->partner();
 
 /// --- --- SECTION LIFE STASTISTICS PANEL (bg-images) --- ---
 
@@ -52,9 +56,7 @@ if ($year > 2023) {
     $coc = $coc + date("z");
 }
 
-$projects = 5;
-$clients = 19;
-$partners = 2;
+
 
 /// --- --- SECTION MY SKILLS --- ---				
 $skills = array(
@@ -186,7 +188,7 @@ $skills = array(
                 </p>
 
                 <div class="btn btn-success">another time</div>
-                <a href="/download/Hassan_Kajila_CV-(Eng).pdf" downoload="HASSAN_KAJILA_CV"
+                <a href="/download/Hassan_Kajila_CV-(Eng)-.pdf" downoload="HASSAN_KAJILA_CV"
                    class="btn btn-primary btn-learn">
                     Download CV <i class="icon-download4"></i>
                 </a>

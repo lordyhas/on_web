@@ -30,6 +30,8 @@ class SessionManager{
 
     public function login($username = "guest_user", $login = true): void
     {
+
+        //$_SESSION['property'] = array();
         $_SESSION['username'] = $username;
         $_SESSION['login'] = $login;
     }

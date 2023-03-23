@@ -2,19 +2,20 @@
 namespace DatabaseRepository;
 
 use SessionRepository\SessionManager;
-use mysqli as Database;
+use mysqli as MySQL;
+
 
 class DatabaseManager{
-    private Database $connection;
+    private MySQL $connection;
     function __construct() {
-        $servername = "https://hassankajila.com/";
+        $servername = "hassankajila.com";
         $username = "u601424401_hassankajila";
-        $password = "tZ=Y#0mR";
+        $password = "tZ=Y#0mR"; // %k)Qh$H&5ZUXiJw
         $dbname = "u601424401_hassan_db";
-        $this->connection = new Database($servername, $username, $password, $dbname);
+        $this->connection = new MySQL($servername, $username, $password, $dbname);
     }
 
-    public function connection(): Database
+    public function connection(): MySQL
     {
         return $this->connection;
     }
@@ -35,7 +36,6 @@ class DatabaseManager{
             $arr[] = $row;
         }
         return $arr;
-
     }
 
     private function query_insert(string $query): void
@@ -71,13 +71,14 @@ class  Properties {
     public bool $is_ready = false;
     function __construct(){
         $this->dbm = new DatabaseManager();
+        $this->save_session_properties();
     }
 
     private function save_session_properties(): array {
         $sm = new SessionManager();
         if($sm->is_logged() || $this->is_ready) {
             $index = self::table;
-            $db_properties = $this->dbm->query_to_array("SELECT * FROM self::table");
+            $db_properties = $this->dbm->query_to_array("SELECT * FROM $index");
 
             $properties = array();
             foreach ($db_properties as $prop) {
@@ -98,8 +99,8 @@ class  Properties {
         return $_SESSION[self::table]; //$this->save_session_properties();
     }
 
-    public function expertise_year() : int {
-        return $_SESSION[self::table]['exp_year'];
+    public function expertise_year()  {
+        return $_SESSION[self::table]['expertise_year'];
     }
 
     public function project() : int {
