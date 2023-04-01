@@ -49,7 +49,7 @@ if(!isset($_GET['id'])){
     <div class="container">
 
         <div class="row justify-content-md-center">
-            <div class="col col-7">
+            <div class="col col-lg-7">
                 <div>
                     <h1>Study of the best stochastic gradient descent optimizers for automatic license plate recognition.</h1>
                     <h3 class="section-heading" style="font-size: 32px;">Abstract</h3>
@@ -61,6 +61,7 @@ if(!isset($_GET['id'])){
                     </p>
                 </div>
             </div>
+
             <div class="col col-lg-5">
                 <div class="card mt-5">
                     <div class="card-header">
@@ -100,9 +101,22 @@ if(!isset($_GET['id'])){
                       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                       
                       <div class="row">
-                        <div class="col"><a href="#" class="btn btn-primary">Reference</a></div>
-                        <div class="col"><a href="#" class="btn btn-primary">Download</a></div>
-                        <div class="col"><a href="#" class="btn btn-danger">Get PDF</a></div>
+                        <div class="col">
+                            <div class="m-1">
+                                <a href="#" class="btn btn-primary">Reference</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="m-1">
+                                <a href="#" class="btn btn-primary">Download</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="m-1">
+                                <a href="#" class="btn btn-danger">Get PDF</a>
+                            </div>
+
+                        </div>
                       </div>
                     </div>
                 </div>
