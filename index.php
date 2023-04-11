@@ -63,12 +63,12 @@ $skills = array(
     1 => ["Python", 90, 1],
     ["Java/Kotlin", 80, 2],
     ["HTML5/CSS", 90, 3],
-    ["Flutter/Dart", 90, 4],
+    ["Flutter/Dart", 95, 4],
     ["C/C++", 90, 5],
-    ["JavaScript", 40, 6],
+    ["JavaScript", 50, 6],
     //["Arduino", 70, 7],
-    ["SQL", 60, 4],
-    ["PHP", 70, 5]
+    ["SQL", 70, 4],
+    ["PHP", 80, 5]
     //"" => ,
     //"" => ,
 );
@@ -82,7 +82,7 @@ $skills = array(
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hassan Kajila | Home </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portofolio of Hassan Kajila"/>
+    <meta name="description" content="Portfolio of Hassan Kajila"/>
     <meta name="keywords" content="lordyhas"/>
     <meta name="author" content="Hassan Kajila"/>
 
@@ -156,7 +156,7 @@ $skills = array(
                                 <a href="email://contact@hassankajila.com" style="text-decoration: none;">
                                     contact@hassankajila.com</a> <br/>
                                 <a href="email://dev.haspro@gmail.com" style="text-decoration: none;">
-                                    dev.haspro@gmail.com</a>
+                                    dev.haspro+hk@gmail.com</a>
                             </p>
                         </div>
                     </div>
@@ -188,7 +188,7 @@ $skills = array(
                 </p>
 
                 <div class="btn btn-success">another time</div>
-                <a href="/download/Hassan_Kajila_CV-(Eng)-.pdf" downoload="HASSAN_KAJILA_CV"
+                <a href="#" downoload="HASSAN_KAJILA_CV"
                    class="btn btn-primary btn-learn">
                     Download CV <i class="icon-download4"></i>
                 </a>
@@ -304,8 +304,8 @@ $skills = array(
                                                 <h1 style="color: #fff;">I am a <br>Software Developer</h1>
                                                 <h2>@lordyhas <i class="icon-github"></i></h2>
                                                 <p>
-                                                    <a href="/download/Hassan_Kajila_CV-(Eng).pdf"
-                                                       downoload="HASSAN_KAJILA_CV"
+                                                    <a href="#"
+                                                       download="HASSAN_KAJILA_CV"
                                                        style="border: 1px solid #fff; color: #fff;"
                                                        class="btn btn-primary btn-learn">
                                                         Download CV <i class="icon-download4"></i>
@@ -562,7 +562,7 @@ $skills = array(
             <!-- SECTION LIFE STASTISTICS PANEL -->
 
             <div id="colorlib-counter" class="colorlib-counters"
-                 style="background-image: url(images/<?= $bg_coversx[$i] ?>);" data-stellar-background-ratio="0.5">
+                 style="background-image: url(<?="images/". $bg_coversx[$i] ?>);" data-stellar-background-ratio="0.5">
                 <div class="overlay"></div>
                 <div class="colorlib-narrow-content">
                     <div class="row">
@@ -857,7 +857,8 @@ $skills = array(
                                  style="background-image: url(images/img-projet-exploress-1.jpeg); background-size: cover;">
                                 <div class="desc">
                                     <div class="con">
-                                        <h3><a href="https://exploress.space/home" target="_blanc">Exploress
+                                        <?php //https://exploress.space/home ?>
+                                        <h3><a href="/exploress" target="_blanc">Exploress
                                                 Services</a></h3>
                                         <span>Online Marketplace (Platefrom)
 											<ul>
@@ -1090,7 +1091,7 @@ $skills = array(
                                     <i class="icon-mail"></i>
                                 </div>
                                 <div class="colorlib-text">
-                                    <p><a href="mail://" style="text-decoration: none;"> mail@hassankajila.com</a></p>
+                                    <p><a href="mail://" style="text-decoration: none;"> contact@hassankajila.com</a></p>
                                 </div>
                             </div>
 
@@ -1175,8 +1176,7 @@ $skills = array(
                                         <div style="padding-top: 15px;"></div>
                                         <h4>Quick Links</h4>
                                         <ul class="list-unstyled">
-                                            <li><a href="https://linktr.ee/hassankajila" style="text-decoration: none;">My
-                                                    Online Link</a></li>
+                                            <li><a href="https://linktr.ee/lordyhas" style="text-decoration: none;">My LinkTree</a></li>
                                             <li><a href="https://github.com/lordyhas" style="text-decoration: none;">GitHub</a>
                                             </li>
                                             <li><a href="https://stackoverflow.com/users/14639814/lordyhas"
@@ -1194,7 +1194,7 @@ $skills = array(
                                         <div style="padding-top: 15px;"></div>
                                         <h4>Newsletter</h4>
                                         <p>
-                                            We don't have a newsletter service but you can leave your email
+                                            We don't have a newsletter service, but you can leave your email
                                             to be informed about our products.
                                         </p>
                                         <div id="mc_embed_signup">

@@ -12,6 +12,7 @@ if(!isset($_GET['id'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Article - Abstract</title>
 
     <link rel="stylesheet" href="/contents/css/animate.css">
@@ -48,8 +49,8 @@ if(!isset($_GET['id'])){
         </header>
     <div class="container">
 
-        <div class="row justify-content-md-center">
-            <div class="col col-lg-7">
+        <div class="row flex-wrap ">
+            <div class="col col-7">
                 <div>
                     <h1>Study of the best stochastic gradient descent optimizers for automatic license plate recognition.</h1>
                     <h3 class="section-heading" style="font-size: 32px;">Abstract</h3>
@@ -62,7 +63,7 @@ if(!isset($_GET['id'])){
                 </div>
             </div>
 
-            <div class="col col-lg-5">
+            <div class="col col-lg-4">
                 <div class="card mt-5">
                     <div class="card-header">
                         <h5 class="card-title">Recommended article</h5>
@@ -102,18 +103,18 @@ if(!isset($_GET['id'])){
                       
                       <div class="row">
                         <div class="col">
-                            <div class="m-1">
-                                <a href="#" class="btn btn-primary">Reference</a>
+                            <div class="mt-1">
+                                <a href="javascript:void(0)" class="btn btn-primary">Cite</a>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="m-1">
-                                <a href="#" class="btn btn-primary">Download</a>
+                            <div class="mt-1">
+                                <a href="javascript:void(0)" class="btn btn-primary">Download</a>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="m-1">
-                                <a href="#" class="btn btn-danger">Get PDF</a>
+                            <div class="mt-1">
+                                <a href="javascript:void(0)" class="btn btn-danger">PDF</a>
                             </div>
 
                         </div>
@@ -140,7 +141,7 @@ if(!isset($_GET['id'])){
         <?php include_once("footer.blog.php") ?>
     </footer>
     <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script-->
     <!-- Core theme JS-->
     <script src="/contents/js/blog.scripts.js"></script>
     
