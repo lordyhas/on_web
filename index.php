@@ -5,15 +5,15 @@
 //
 
 include_once "logic/utils.php";
+
 use SessionRepository\SessionManager;
 use DatabaseRepository\Properties;
 
 
 $session = new SessionManager();
-if($session->is_logged()){
+if ($session->is_logged()) {
     $session->login();
 }
-
 
 
 ///++++++++++++++++++++++++++++++++++++++
@@ -57,8 +57,7 @@ if ($year > 2023) {
 }
 
 
-
-/// --- --- SECTION MY SKILLS --- ---				
+/// --- --- SECTION MY SKILLS --- ---
 $skills = array(
     1 => ["Python", 90, 1],
     ["Java/Kotlin", 80, 2],
@@ -144,7 +143,7 @@ $skills = array(
             <div class="card-body">
                 <h3 class="card-title text-info">My Contacts</h3>
                 <p class="card-text text-info">
-                    I'm Sofware Developer : Web and Mobile app
+                    I'm Sofware Developer : Web and Mobile app </p>
 
                 <div class="col">
                     <div class="colorlib-feature colorlib-feature-sm">
@@ -185,7 +184,7 @@ $skills = array(
                         </div>
                     </div>
                 </div>
-                </p>
+
 
                 <div class="btn btn-success">another time</div>
                 <a href="#" downoload="HASSAN_KAJILA_CV"
@@ -201,7 +200,7 @@ $skills = array(
 
 <div id="colorlib-page">
     <div class="container-wrap">
-        <!--a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a-->
+        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
         <!-- SECTION NAV & MENU -->
         <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
             <div class="text-center">
@@ -562,7 +561,7 @@ $skills = array(
             <!-- SECTION LIFE STASTISTICS PANEL -->
 
             <div id="colorlib-counter" class="colorlib-counters"
-                 style="background-image: url(<?="images/". $bg_coversx[$i] ?>);" data-stellar-background-ratio="0.5">
+                 style="background-image: url(<?= "images/" . $bg_coversx[$i] ?>);" data-stellar-background-ratio="0.5">
                 <div class="overlay"></div>
                 <div class="colorlib-narrow-content">
                     <div class="row">
@@ -871,7 +870,8 @@ $skills = array(
 										</span>
                                         <p class="icon">
                                             <span><a href="#"><i class="icon-share3"></i></a></span>
-                                            <span><a href="https://exploress.space/home"><i class="icon-eye"></i> 154</a></span>
+                                            <span><a href="https://exploress.space/home"><i
+                                                            class="icon-eye"></i> 274</a></span>
                                             <span><a href="#"><i class="icon-heart"></i> 74</a></span>
                                         </p>
                                     </div>
@@ -894,7 +894,8 @@ $skills = array(
 										</span>
                                         <p class="icon">
                                             <span><a href="#"><i class="icon-share3"></i></a></span>
-                                            <span><a href="https://xclassroom.hassankajila.com/"><i class="icon-eye"></i> 40</a></span>
+                                            <span><a href="https://xclassroom.hassankajila.com/"><i
+                                                            class="icon-eye"></i> 40</a></span>
                                             <span><a href="#"><i class="icon-heart"></i> 19</a></span>
                                         </p>
                                     </div>
@@ -974,7 +975,8 @@ $skills = array(
 										</span>
                                         <p class="icon">
                                             <span><a href="#"><i class="icon-share3"></i></a></span>
-                                            <span><a href="https://github.com/lordyhas/python_scientific_calculus"><i class="icon-eye"></i> 79</a></span>
+                                            <span><a href="https://github.com/lordyhas/python_scientific_calculus"><i
+                                                            class="icon-eye"></i> 79</a></span>
                                             <span><a href="#"><i class="icon-heart"></i> 39</a></span>
                                         </p>
                                     </div>
@@ -1091,7 +1093,8 @@ $skills = array(
                                     <i class="icon-mail"></i>
                                 </div>
                                 <div class="colorlib-text">
-                                    <p><a href="mail://" style="text-decoration: none;"> contact@hassankajila.com</a></p>
+                                    <p><a href="mail://" style="text-decoration: none;"> contact@hassankajila.com</a>
+                                    </p>
                                 </div>
                             </div>
 
@@ -1176,7 +1179,8 @@ $skills = array(
                                         <div style="padding-top: 15px;"></div>
                                         <h4>Quick Links</h4>
                                         <ul class="list-unstyled">
-                                            <li><a href="https://linktr.ee/lordyhas" style="text-decoration: none;">My LinkTree</a></li>
+                                            <li><a href="https://linktr.ee/lordyhas" style="text-decoration: none;">My
+                                                    LinkTree</a></li>
                                             <li><a href="https://github.com/lordyhas" style="text-decoration: none;">GitHub</a>
                                             </li>
                                             <li><a href="https://stackoverflow.com/users/14639814/lordyhas"
