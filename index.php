@@ -200,7 +200,7 @@ $skills = array(
 
 <div id="colorlib-page">
     <div class="container-wrap">
-        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+        <!--a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a-->
         <!-- SECTION NAV & MENU -->
         <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
             <div class="text-center">
