@@ -49,7 +49,7 @@ $i = date('w'); /// index of background images
 /// --- --- SECTION LIFE STASTISTICS PANEL (stat) --- ---
 
 $year = date("Y");
-$coc = 135;
+$coc = 185;
 if ($year > 2023) {
     $coc = 365 + $coc;
 } else {
@@ -75,7 +75,7 @@ $skills = array(
 
 
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -111,7 +111,7 @@ $skills = array(
     <!-- Flexslider  -->
     <link rel="stylesheet" href="css/flexslider.css">
     <!-- Flaticons  -->
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <!--link rel="stylesheet" href="fonts/flaticon/font/flaticon.css"-->
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
 
