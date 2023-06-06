@@ -18,17 +18,16 @@ $router->get('/home', 'index.php');
 //$router->get('/', 'index.html');
 ///get('/', 'index.html');
 
-$router->get('/blog', '/contents/blog.php');
-$router->get('/blog/abstract', '/contents/article_abstract.php');
-$router->get('/blog/post', '/contents/article_model.php');
+//$router->get('/blog', '/contents/blog.php');
+//$router->get('/blog/abstract', '/contents/article_abstract.php');
+//$router->get('/blog/post', '/contents/article_model.php');
 
 
+//$router->get('/about', '/contents/about.php');
 
-$router->get('/about', '/contents/about.php');
+//$router->get('/testx', '/article_model.php');
 
-$router->get('/testx', '/article_model.php');
-
-
+//-------------------------------------------
 // Dynamic GET. Example with 1 variable
 // The $id will be available in user.php
 //$router->get('/user/$id', 'user.php');

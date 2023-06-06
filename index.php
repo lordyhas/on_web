@@ -59,7 +59,7 @@ if ($year > 2023) {
 
 /// --- --- SECTION MY SKILLS --- ---
 $skills = array(
-    1 => ["Python", 90, 1],
+    1 => ["Python", 95, 1],
     ["Java/Kotlin", 80, 2],
     ["HTML5/CSS", 90, 3],
     ["Flutter/Dart", 95, 4],
@@ -67,7 +67,7 @@ $skills = array(
     ["JavaScript", 50, 6],
     //["Arduino", 70, 7],
     ["SQL", 70, 4],
-    ["PHP", 80, 5]
+    ["PHP", 90, 5]
     //"" => ,
     //"" => ,
 );
