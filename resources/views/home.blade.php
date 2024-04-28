@@ -652,7 +652,7 @@ $skills = array(
 
             <!-- SECTION MY SCHOOL -->
 
-            <!-- -->
+            <!-- --#>
             <section class="colorlib-education" data-section="education">
                 <div class="colorlib-narrow-content">
                     <div class="row">
@@ -775,7 +775,7 @@ $skills = array(
                     </div>
                 </div>
             </section>
-            <!-- -->
+            <#!-- -->
 
             <!-- SECTION MY EXPERIENCE -->
 
@@ -865,7 +865,7 @@ $skills = array(
                 </div>
             </section-->
 
-            <!-- SECTION WORK RPOJECT -->
+            <!-- SECTION WORK PROJECT -->
 
             <section class="colorlib-work" data-section="work">
                 <div class="colorlib-narrow-content">
@@ -1209,15 +1209,13 @@ $skills = array(
                                         <div style="padding-top: 15px;"></div>
                                         <h4>Quick Links</h4>
                                         <ul class="list-unstyled">
-                                            <li><a href="https://linktr.ee/hassankajila" style="text-decoration: none;">My
-                                                    Online Link</a></li>
-                                            <li><a href="https://github.com/lordyhas" style="text-decoration: none;">GitHub</a>
-                                            </li>
+                                            <li><a href="https://linktr.ee/hassankajila" style="text-decoration: none;">
+                                                    My Online Link</a></li>
+                                            <li><a href="https://github.com/lordyhas" style="text-decoration: none;">GitHub</a></li>
                                             <li><a href="https://stackoverflow.com/users/14639814/lordyhas"
                                                    style="text-decoration: none;">Stackoverflow</a></li>
                                             <li><a href="" style="text-decoration: none;">Blog</a></li>
-                                            <li>
-                                                <a href="https://www.termsfeed.com/live/fe72a31c-7813-49c2-aa4b-871b097506fb"
+                                            <li><a href="https://www.termsfeed.com/live/fe72a31c-7813-49c2-aa4b-871b097506fb"
                                                    style="text-decoration: none;">Terms of Service</a></li>
                                         </ul>
                                     </div>
@@ -1228,7 +1226,7 @@ $skills = array(
                                         <div style="padding-top: 15px;"></div>
                                         <h4>Newsletter</h4>
                                         <p>
-                                            We don't have a newsletter service but you can leave your email
+                                            We don't have a newsletter service, but you can leave your email
                                             to be informed about our products.
                                         </p>
                                         <div id="mc_embed_signup">
@@ -1238,12 +1236,12 @@ $skills = array(
 
 
                                                 <div class="form-group">
+                                                    <label for="newsletter-form-email"></label>
                                                     <input type="email" name="email" id="newsletter-form-email"
-                                                           placeholder="Email Address"
-                                                           class="form-control" onfocus="this.placeholder = ''"
-                                                           onblur="this.placeholder = ' Email Address '">
+                                                                                                      placeholder="Email Address"
+                                                                                                      class="form-control" onfocus="this.placeholder = ''"
+                                                                                                      onblur="this.placeholder = ' Email Address '">
                                                 </div>
-                                                </br>
 
                                                 <button type="submit" name="submit" id="newsletter-submit"
                                                         class="btn btn-outline-primary btn-send-message">subscribe
