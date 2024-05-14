@@ -444,7 +444,7 @@ $skills = array(
 
             <!-- SECTION MY JOB -->
 
-
+            <!-- --#>
             <section class="colorlib-services" data-section="services">
                 <div class="colorlib-narrow-content">
                     <div class="row">
@@ -565,6 +565,8 @@ $skills = array(
                 </div>
             </section>
 
+            -->
+
             <!-- SECTION LIFE STASTISTICS PANEL -->
 
             <div id="colorlib-counter" class="colorlib-counters"
@@ -644,7 +646,6 @@ $skills = array(
                             </div>
 
                         <?php } ?>
-
 
                     </div>
                 </div>
@@ -1230,21 +1231,18 @@ $skills = array(
                                             to be informed about our products.
                                         </p>
                                         <div id="mc_embed_signup">
-                                            <form
-                                                    action="#"
-                                                    method="post">
-
-
+                                            <form action="#" method="post">
                                                 <div class="form-group">
                                                     <label for="newsletter-form-email"></label>
                                                     <input type="email" name="email" id="newsletter-form-email"
-                                                                                                      placeholder="Email Address"
-                                                                                                      class="form-control" onfocus="this.placeholder = ''"
-                                                                                                      onblur="this.placeholder = ' Email Address '">
+                                                           placeholder="Email Address"
+                                                           class="form-control" onfocus="this.placeholder = ''"
+                                                           onblur="this.placeholder = ' Email Address '">
                                                 </div>
 
                                                 <button type="submit" name="submit" id="newsletter-submit"
-                                                        class="btn btn-outline-primary btn-send-message">subscribe
+                                                        class="btn btn-outline-primary btn-send-message">
+                                                    subscribe
                                                 </button>
                                                 <div class="mt-10 info"></div>
                                             </form>

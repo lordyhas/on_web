@@ -15,8 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name("home");
 
 Route::get('/laravel', function () {
     return view('welcome');
 });
+Route::prefix('/test')->group( function () {
+    Route::get('/laravel', function () {
+        return view('welcome');
+    })->name('welcome');
+})->name('test.');
+
+
+
