@@ -83,7 +83,7 @@ $skills = array(
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hassan Kajila | Home </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portofolio of Hassan Kajila"/>
+    <meta name="description" content="Portfolio of Hassan Kajila"/>
     <meta name="keywords" content="lordyhas"/>
     <meta name="author" content="Hassan Kajila"/>
 
@@ -123,7 +123,6 @@ $skills = array(
     <!-- Theme style  -->
     <link rel="stylesheet" href="{{asset("css/style.css")}}">
 
-
     <!-- Modernizr JS -->
     <script src="{{asset("js/modernizr-2.6.2.min.js")}}"></script>
     <!-- FOR IE9 below -->
@@ -155,7 +154,7 @@ $skills = array(
                         <div class="colorlib-text">
                             <p>
                                 <a href="email://contact@hassankajila.com" style="text-decoration: none;">
-                                    contact@hassankajila.com</a> <br/>
+                                    mail@hassankajila.com</a> <br/>
                                 <a href="email://dev.haspro@gmail.com" style="text-decoration: none;">
                                     dev.haspro@gmail.com</a>
                             </p>
@@ -220,7 +219,7 @@ $skills = array(
                         <li><a href="#" data-nav-section="skills">Skills</a></li>
                         <!--li><a href="#" data-nav-section="education">Education</a></li-->
                         <!--li><a href="#" data-nav-section="experience">Experience</a></li-->
-                        <li><a href="#" data-nav-section="work">Work</a></li>
+                        <!--li><a href="#" data-nav-section="work">Work</a></li-->
                         <!--li><a href="#" data-nav-section="blog">Blog</a></li-->
                         <li><a href="#" data-nav-section="contact">Contact</a></li>
                     </ul>
@@ -332,40 +331,43 @@ $skills = array(
                             <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
                                 <div class="col-md-12">
                                     <div class="about-desc">
-                                        <span class="heading-meta">About Us</span>
+                                        <span class="heading-meta">About Me</span>
                                         <h2 class="colorlib-heading">Who Am I?</h2>
                                         <p><strong>Hi, I'm Lordy Hassan Kajila </strong>
-                                            Computer scientist, Developer and Researcher evolving in
-                                            Artificial Intelligence and Data Science (Computer Vision & Natural Language Processing).<br/>
+                                            Computer scientist, Developer and Researcher in
+                                            Artificial Intelligence and Data Science (Computer Vision
+                                            & Natural Language Processing).<br/>
                                             What characterizes me is creativity. I use this skill in the development of
-                                            cross-platform software and applications
-                                            (Mobile, Web, Desktop) for <?= $exp_year ?> years as a freelancer.
+                                            cross-platform software and applications (Mobile, Web, Desktop).
                                         </p>
-                                        <p>
+                                        @php
+                                        /*
+                                            for <-?= $exp_year ?> years as a freelancer.
+                                            But what I enjoy above all is spending time doing quality work, with the aim
+                                            of satisfying my customers. I like people to appreciate my finished products.
+                                         */
+                                        @endphp
+                                        <!-- -->
+                                        <p> <b>My hobbies</b> <br/>
                                             I like coding, I know it's not a very original activity, but this hobby
                                             suits me perfectly. Programming requires a certain
                                             sense of organization and attention because you have to build an algorithm,
                                             manage bugs, establish a schedule, etc.<br/>
-                                            But what I enjoy above all is spending time doing quality work, with the aim
-                                            of satisfying my customers. I like people to appreciate my finished products.
-
                                         </p>
                                         <p>
-                                            I also like to cultivate myself by reading.
 
-                                        </p>
-                                        <p>
-                                            <b>My other hobbies</b> <br/>
                                             <!-- it may not be very original, but for me -->
-                                            I love listening to music, it's a real passion for me. I have downloaded a
-                                            lot of albums that I like to listen to
-                                            when I code.
-                                            I also like to walk.
+                                            I love listening to music. I have downloaded a lot of albums that
+                                            I like to listen to when I code.<br/>
+                                            I also like walking, cycling, cooking and reading.
 
-                                            <!--  plot twist : IA genarate the text in english. I'm French speaker i'm not
+                                            <!--
+                                            <p> Plot twist : IA generate the text in english. I'm French speaker i'm not
                                             too good at english, but that one is my text it ain't an IA generated and so
                                             how do find my english?
+                                            <span>(and believe human can do better with IA not only worse things) </span>
                                             J'arrête avec des long textes d'hab je suis pas aussi bavard bisous <3 :).
+                                            </p>
                                             -->
                                         </p>
                                     </div>
@@ -424,19 +426,19 @@ $skills = array(
                                 </div>
 
                             </div>
-                            <div class="row">
+                            <!-- div class="row">
                                 <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
                                     <div class="hire">
                                         <h2>
                                             I am working as a freelance, and happy to tell you <br>
-                                            that <?= $projects ?>+ projects done successfully!
+                                            that <-?= $projects ?>+ projects done successfully!
                                         </h2>
                                         <button style="background-color: #f9bf3f00;" id="openModal" class="btn-hire">
                                             Contact me
                                         </button>
                                     </div>
                                 </div>
-                            </div>
+                            </div -->
                         </div>
                     </div>
                 </div>
@@ -569,6 +571,19 @@ $skills = array(
 
             <!-- SECTION LIFE STASTISTICS PANEL -->
 
+            @php
+            // Créer deux objets DateTime
+            $dateSc = new DateTime("2004-06-11");
+            $dateNow = new DateTime("now");
+
+            // Calculer la différence entre les dates
+            $diff = $dateSc->diff($dateNow);
+
+            // Afficher la différence en jours
+
+            @endphp
+
+
             <div id="colorlib-counter" class="colorlib-counters"
                  style="background-image: url({{"images/$bg_coversx[$i]"}});" data-stellar-background-ratio="0.5">
                 <div class="overlay"></div>
@@ -584,18 +599,18 @@ $skills = array(
                         </div>
                         <div class="col-md-3 text-center animate-box">
                             <span class="colorlib-counter js-counter" data-from="0"
-                                  data-to=<?= $projects ?> data-speed="5000" data-refresh-interval="50"></span>
+                                  data-to={{$projects}} data-speed="5000" data-refresh-interval="50"></span>
                             <span class="colorlib-counter-label">Projects</span>
                         </div>
                         <div class="col-md-3 text-center animate-box">
                             <span class="colorlib-counter js-counter" data-from="0"
-                                  data-to=<?= $clients ?> data-speed="5000" data-refresh-interval="50"></span>
+                                  data-to= {{$clients}}  data-speed="5000" data-refresh-interval="50"></span>
                             <span class="colorlib-counter-label">Clients</span>
                         </div>
                         <div class="col-md-3 text-center animate-box">
                             <span class="colorlib-counter js-counter" data-from="0"
-                                  data-to=<?= $partners ?> data-speed="5000" data-refresh-interval="50"></span>
-                            <span class="colorlib-counter-label">Partners</span>
+                                  data-to= {{$diff->days}}  data-speed="5000" data-refresh-interval="50"></span>
+                            <span class="colorlib-counter-label">Days spend on school</span>
                         </div>
                     </div>
                 </div>
@@ -623,10 +638,9 @@ $skills = array(
                                 language described in my projects
                             </p>
                         </div>
-
                         <?php
 
-                        for ($i = 1; $i <= count($skills); $i++) {
+                        for ($i = 1; $i <= count($skills); $i++) :
                             $value = $skills[$i];
 
                             $side = ($i % 2 == 0) ? "fadeInLeft" : "fadeInRight";
@@ -645,7 +659,7 @@ $skills = array(
                                 </div>
                             </div>
 
-                        <?php } ?>
+                        <?php endfor; ?>
 
                     </div>
                 </div>
@@ -653,7 +667,7 @@ $skills = array(
 
             <!-- SECTION MY SCHOOL -->
 
-            <!-- --#>
+            <!-- -->
             <section class="colorlib-education" data-section="education">
                 <div class="colorlib-narrow-content">
                     <div class="row">
@@ -671,7 +685,7 @@ $skills = array(
                                         <div class="panel-heading" role="tab" id="headingOne">
                                             <h4 class="panel-title">
                                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    Master Degree AI & Data Science
+                                                    Master Degree Computer Science
                                                 </a>
                                             </h4>
                                         </div>
@@ -682,32 +696,40 @@ $skills = array(
                                                           <p>Université de Sherbrooke, Canada </p>
                                                       </div>
                                                       <div class="col-md-6">
-                                                          <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                                          <p>
+                                                              <b>Skills</b> : Machine Learning,
+                                                              Natural Language Processing (NLP),
+                                                              Real-time Systems Design & HMI
+                                                          </p>
                                                       </div>
                                                   </div>
                                              </div>
                                         </div>
                                     </div>
 
+
                                     <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingSix">
+                                        <div class="panel-heading" role="tab" id="headingFour">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                                     Master Degree Software Engineering
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="collapseSix" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSix">
-                                             <div class="panel-body">
+                                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                            <div class="panel-body">
                                                 <div class="row">
-                                                      <div class="col-md-6">
-                                                          <p>Université Nouveaux Horizons, DR. Congo </p>
-                                                      </div>
-                                                      <div class="col-md-6">
-                                                          <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                                                      </div>
-                                                  </div>
-                                             </div>
+                                                    <div class="col-md-6">
+                                                        <p>Université Nouveaux Horizons, DR. Congo </p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>
+                                                            <b>Skills</b>: Database Design, Data Exploring, Data Structure,
+                                                            Backend Web Design, Mobile App Design
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -721,29 +743,44 @@ $skills = array(
                                         </div>
                                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                             <div class="panel-body">
-                                                <p>Université Nouveaux Horizons, DR. Congo.</p>
-                                                    <ul>
-                                                        <li>Computational Sciences | Calcul Scientifiques</li>
-                                                        <li>...</li>
-                                                    </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingThree">
-                                            <h4 class="panel-title">
-                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Diploma in Information Technology
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                            <div class="panel-body">
-                                                <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <p>Université Nouveaux Horizons, DR. Congo <br>Path : Computational Sciences </p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>
+                                                            <b>Skills</b>: Java, C & Python Programing, Algorithm Optimisation,
+                                                            Object Oriented Programming, Client-server Programming,
+                                                            Database Management, Software Development, Web Development,
+                                                            Object Recognition Programming,
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Diploma in Industrial Electricity
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                                <p>
+                                                    My High School Secondary Education was in Industrial Electricity. <br>
+                                                    <b>Skills</b> : Assembly, installation and maintenance of building electrical installations.
+                                                    Installation of solar panels at home and automatic systems (home automation).
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="headingFour">
                                             <h4 class="panel-title">
                                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Diploma in Information Technology
@@ -755,9 +792,9 @@ $skills = array(
                                                 <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div-->
 
-                                    <div class="panel panel-default">
+                                    <!-- div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="headingFive">
                                             <h4 class="panel-title">
                                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">High School Secondary Education
@@ -769,14 +806,14 @@ $skills = array(
                                                 <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <#!-- -->
+            <!-- -->
 
             <!-- SECTION MY EXPERIENCE -->
 
@@ -867,7 +904,7 @@ $skills = array(
             </section-->
 
             <!-- SECTION WORK PROJECT -->
-
+            <!--
             <section class="colorlib-work" data-section="work">
                 <div class="colorlib-narrow-content">
                     <div class="row">
@@ -878,13 +915,7 @@ $skills = array(
                         </div>
                     </div>
                     <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                        <!--div class="col-md-12">
-                            <p class="work-menu">
-                                <span><a href="#" class="active">Data Analysis</a></span>
-                                <span><a href="#">Web Backend Dev</a></span>
-                                <span><a href="#">Software</a></span>
-                                <span><a href="#">Apps</a></span></p> background-size: auto|length|cover|contain|initial|inherit;
-                        </div-->
+
                     </div>
                     <div class="row">
                         <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
@@ -1015,37 +1046,6 @@ $skills = array(
                                 </div>
                             </div>
                         </div>
-
-                        <!--div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                            <div class="project" style="background-image: url(images/img-5.jpg);">
-                                <div class="desc">
-                                    <div class="con">
-                                        <h3><a href="work.html">Work 05</a></h3>
-                                        <span>Graphic, Logo</span>
-                                        <p class="icon">
-                                            <span><a href="#"><i class="icon-share3"></i></a></span>
-                                            <span><a href="#"><i class="icon-eye"></i> 100</a></span>
-                                            <span><a href="#"><i class="icon-heart"></i> 49</a></span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-                            <div class="project" style="background-image: url(images/img-6.jpg);">
-                                <div class="desc">
-                                    <div class="con">
-                                        <h3><a href="work.html">Work 06</a></h3>
-                                        <span>Web Design</span>
-                                        <p class="icon">
-                                            <span><a href="#"><i class="icon-share3"></i></a></span>
-                                            <span><a href="#"><i class="icon-eye"></i> 100</a></span>
-                                            <span><a href="#"><i class="icon-heart"></i> 49</a></span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div-->
                     </div>
                     <div class="row">
                         <div class="col-md-12 animate-box">
@@ -1055,6 +1055,8 @@ $skills = array(
                     </div>
                 </div>
             </section>
+            -->
+
 
             <!-- SECTION BLOG -->
 
@@ -1136,10 +1138,12 @@ $skills = array(
                                 </div>
                                 <div class="colorlib-text">
                                     <!--p>Democratic Republic of Congo.</p-->
-                                    <p><a style="text-decoration: none;" target="_blank"
-                                          href="https://www.google.com/travel/things-to-do?g2lb=2502548,2503771,2503781,4258168,4270442,4284970,4291517,4306835,4597339,4718358,4723331,4731329,4757164,4814050,4861688,4864715,4874190,4882660,4886082,4886480,4893075,4895528,4902087,4903082,4904256,4906050,4906855&hl=en-CD&gl=cd&cs=1&ssta=1&dest_mid=/m/0cf0s&dest_state_type=main&dest_src=dvr&sa=X&ved=2ahUKEwiDhqXumN77AhWFUMAKHSOwA4EQxA16BAhcEAU">
+                                    <p>
+                                        <a style="text-decoration: none;" target="_blank"
+                                          href="https://www.google.com/maps/place/Quebec/">
                                             Sherbrooke, QC, - Canada.
-                                        </a></p>
+                                        </a>
+                                    </p>
                                 </div>
                             </div>
 
@@ -1149,7 +1153,7 @@ $skills = array(
                                     <i class="icon-phone"></i>
                                 </div>
                                 <div class="colorlib-text">
-                                    <p><a href="#" style="text-decoration: none;">Unknown</a></p>
+                                    <p><a href="#" style="text-decoration: none;">Missing</a></p>
                                 </div>
                             </div>
                         </div>
