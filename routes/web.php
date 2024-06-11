@@ -26,5 +26,3 @@ Route::prefix('/test')->group( function () {
     })->name('welcome');
 })->name('test.');
 
-
-
