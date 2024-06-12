@@ -610,7 +610,7 @@ $skills = array(
                         <div class="col-md-3 text-center animate-box">
                             <span class="colorlib-counter js-counter" data-from="0"
                                   data-to= {{$diff->days}}  data-speed="5000" data-refresh-interval="50"></span>
-                            <span class="colorlib-counter-label">Days spend on school</span>
+                            <span class="colorlib-counter-label">Days spent at school</span>
                         </div>
                     </div>
                 </div>
