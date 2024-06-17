@@ -367,13 +367,19 @@ $skills = array(
                                             I also like walking, cycling, cooking and reading.
 
                                             <!--
-                                            <p> Plot twist : IA generate the text in english. I'm French speaker i'm not
-                                            too good at english, but that one is my text it ain't an IA generated and so
-                                            how do find my english?
-                                            <span>(and believe human can do better with IA not only worse things) </span>
-                                            J'arrête avec des long textes d'hab je suis pas aussi bavard bisous <3 :).
-                                            </p>
+
                                             -->
+
+                                            @php
+                                                /*
+                                                  <p> Plot twist : IA generate the text in english. I'm French speaker i'm not
+                                                    too good at english, but that one is my text it ain't an IA generated and so
+                                                    how do find my english?
+                                                    <span>(and believe human can do better with IA not only worse things) </span>
+                                                    J'arrête avec des long textes d'hab je suis pas aussi bavard bisous <3 :).
+                                                    </p> of satisfying my customers. I like people to appreciate my finished products.
+                                                 */
+                                            @endphp
                                         </p>
                                     </div>
                                 </div>
