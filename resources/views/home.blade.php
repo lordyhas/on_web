@@ -87,7 +87,7 @@ $skills = array(
     <meta name="keywords" content="lordyhas"/>
     <meta name="author" content="Hassan Kajila"/>
 
-    <!-- Facebook and Twitter integration -->
+    <!-- Facebook and Twitter integration -- >
     <meta property="og:title" content=""/>
     <meta property="og:image" content=""/>
     <meta property="og:url" content=""/>
@@ -97,6 +97,8 @@ $skills = array(
     <meta name="twitter:image" content=""/>
     <meta name="twitter:url" content=""/>
     <meta name="twitter:card" content=""/>
+
+    -->
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="{{asset("favicon.ico")}}">
@@ -154,9 +156,12 @@ $skills = array(
                         <div class="colorlib-text">
                             <p>
                                 <a href="email://contact@hassankajila.com" style="text-decoration: none;">
-                                    mail@hassankajila.com</a> <br/>
+                                    mail@hassankajila.com</a>
+                                <!--
+                                <br/>
                                 <a href="email://dev.haspro@gmail.com" style="text-decoration: none;">
                                     dev.haspro@gmail.com</a>
+                                -->
                             </p>
                         </div>
                     </div>
@@ -333,7 +338,7 @@ $skills = array(
                                     <div class="about-desc">
                                         <span class="heading-meta">About Me</span>
                                         <h2 class="colorlib-heading">Who Am I?</h2>
-                                        <p><strong>Hi, I'm Lordy Hassan Kajila </strong>
+                                        <p><strong>Hi, I'm<!-- Lordy --> Hassan Kajila </strong>
                                             Computer scientist, Developer and Researcher in
                                             Artificial Intelligence and Data Science (Computer Vision
                                             & Natural Language Processing).<br/>
