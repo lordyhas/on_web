@@ -18,10 +18,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function (Request $request) {
     return Redirect::route('home', [$request]);
 });
+Route::get('/about', function () {
+    abort(404);
+});
 
 Route::get('/home', function (Request $request) {
     return view('home', [$request]);
 })->name("home");
+
+
 
 
 Route::prefix('/test')->name('test.')->group(function () {
