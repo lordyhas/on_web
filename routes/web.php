@@ -15,12 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return Redirect::route('home');
+Route::get('/', function (Request $request) {
+    return Redirect::route('home', [$request]);
 });
 
-Route::get('/home', function () {
-    return view('home');
+Route::get('/home', function (Request $request) {
+    return view('home', [$request]);
 })->name("home");
 
 
