@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,15 +16,38 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return Redirect::route('home');
+});
+
+Route::get('/home', function () {
     return view('home');
 })->name("home");
 
-Route::get('/laravel', function () {
-    return view('welcome');
-});
-Route::prefix('/test')->group( function () {
+
+Route::prefix('/test')->name('test.')->group(function () {
+
     Route::get('/laravel', function () {
         return view('welcome');
     })->name('welcome');
-})->name('test.');
+
+    Route::get('/blog', function (Request $request) {
+        return [
+            "id" => $request->input("id", "0"),
+            "title" => "Nom titre",
+            "contents" => "content's here",
+        ];
+    })->name("blog");
+
+    Route::get('/{title}-{id}', function (string $title, string $id) {
+        return [
+            "id" => $id,
+            "title" => $title,
+            "contents" => "Bonjour contents",
+        ];
+    })->where([
+        'id' => '[0-9]+',
+        'title' => '[a-z0-9\-]+',
+    ])->name("compose ");
+
+});
 
