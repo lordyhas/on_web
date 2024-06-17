@@ -5,23 +5,8 @@
 //version : 0.1.0+1
 //
 
-//include_once "logic/utils.php";
-use SessionRepository\SessionManager;
-use DatabaseRepository\Properties;
-
-/*
-$session = new SessionManager();
-if($session->is_logged()){
-    $session->login();
-}
-*/
-
 
 ///++++++++++++++++++++++++++++++++++++++
-
-//$prop_object = new Properties();
-
-//$properties = $prop_object->get_properties();
 
 
 $exp_year = 4; //$prop_object->expertise_year();
