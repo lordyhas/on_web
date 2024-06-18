@@ -5,23 +5,8 @@
 //version : 0.1.0+1
 //
 
-//include_once "logic/utils.php";
-use SessionRepository\SessionManager;
-use DatabaseRepository\Properties;
-
-/*
-$session = new SessionManager();
-if($session->is_logged()){
-    $session->login();
-}
-*/
-
 
 ///++++++++++++++++++++++++++++++++++++++
-
-//$prop_object = new Properties();
-
-//$properties = $prop_object->get_properties();
 
 
 $exp_year = 4; //$prop_object->expertise_year();
@@ -87,7 +72,7 @@ $skills = array(
     <meta name="keywords" content="lordyhas"/>
     <meta name="author" content="Hassan Kajila"/>
 
-    <!-- Facebook and Twitter integration -->
+    <!-- Facebook and Twitter integration -- >
     <meta property="og:title" content=""/>
     <meta property="og:image" content=""/>
     <meta property="og:url" content=""/>
@@ -97,6 +82,8 @@ $skills = array(
     <meta name="twitter:image" content=""/>
     <meta name="twitter:url" content=""/>
     <meta name="twitter:card" content=""/>
+
+    -->
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="{{asset("favicon.ico")}}">
@@ -154,9 +141,12 @@ $skills = array(
                         <div class="colorlib-text">
                             <p>
                                 <a href="email://contact@hassankajila.com" style="text-decoration: none;">
-                                    mail@hassankajila.com</a> <br/>
+                                    mail@hassankajila.com</a>
+                                <!--
+                                <br/>
                                 <a href="email://dev.haspro@gmail.com" style="text-decoration: none;">
                                     dev.haspro@gmail.com</a>
+                                -->
                             </p>
                         </div>
                     </div>
@@ -333,7 +323,7 @@ $skills = array(
                                     <div class="about-desc">
                                         <span class="heading-meta">About Me</span>
                                         <h2 class="colorlib-heading">Who Am I?</h2>
-                                        <p><strong>Hi, I'm Lordy Hassan Kajila </strong>
+                                        <p><strong>Hi, I'm<!-- Lordy --> Hassan Kajila </strong>
                                             Computer scientist, Developer and Researcher in
                                             Artificial Intelligence and Data Science (Computer Vision
                                             & Natural Language Processing).<br/>
@@ -362,13 +352,19 @@ $skills = array(
                                             I also like walking, cycling, cooking and reading.
 
                                             <!--
-                                            <p> Plot twist : IA generate the text in english. I'm French speaker i'm not
-                                            too good at english, but that one is my text it ain't an IA generated and so
-                                            how do find my english?
-                                            <span>(and believe human can do better with IA not only worse things) </span>
-                                            J'arrête avec des long textes d'hab je suis pas aussi bavard bisous <3 :).
-                                            </p>
+
                                             -->
+
+                                            @php
+                                                /*
+                                                  <p> Plot twist : IA generate the text in english. I'm French speaker i'm not
+                                                    too good at english, but that one is my text it ain't an IA generated and so
+                                                    how do find my english?
+                                                    <span>(and believe human can do better with IA not only worse things) </span>
+                                                    J'arrête avec des long textes d'hab je suis pas aussi bavard bisous <3 :).
+                                                    </p> of satisfying my customers. I like people to appreciate my finished products.
+                                                 */
+                                            @endphp
                                         </p>
                                     </div>
                                 </div>
