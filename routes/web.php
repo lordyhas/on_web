@@ -1,7 +1,6 @@
 <?php
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Redirect;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,9 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function (Request $request) {
-    return Redirect::route('home', [$request]);
+
+Route::get('/', function () {
+    return Redirect::route('home', []);
 });
+
 Route::get('/about', function () {
     abort(404);
 });
@@ -27,7 +28,26 @@ Route::get('/home', function (Request $request) {
 })->name("home");
 
 
+Route::prefix('/cours')->name('course.')->group(function () {
+    Route::get('/', function (Request $request) {
+        return view('course', [$request]);
+    })->name("index");
 
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+
+
+require __DIR__.'/auth.php';
 
 Route::prefix('/test')->name('test.')->group(function () {
 
@@ -55,4 +75,3 @@ Route::prefix('/test')->name('test.')->group(function () {
     ])->name("compose ");
 
 });
-
