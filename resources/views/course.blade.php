@@ -111,7 +111,7 @@
                                 <tbody>
                                     <tr>
                                         <th class="expand-col-60 text-start">01. Introduction au cours</th>
-                                        <td class="expand-col-20">Diapo <i class="fas fa-download"></i></td>
+                                        <td class="expand-col-20"><a href="#">Diapo &nbsp; <i class="fas fa-download"></i></a></td>
                                         <td class="expand-col-20">{{"PDF"}}</td>
                                         <td>{{""}}</td>
                                     </tr>
