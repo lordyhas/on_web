@@ -279,8 +279,15 @@
                             </tr>
 
                             <tr>
-                                <th class="text-start">Méthodes AGILE </th>
-                                <td><a href="#">PDF &nbsp; <i class="fas fa-download"></i></a></td>
+                                <th class="text-start">Méthodes AGILE - SCRUM </th>
+                                <td><a href="https://youtu.be/anZcEIQlpoY?si=JvtviTD1gcORsF9e">Tuto &nbsp;</a></td>
+                                <td>{{""}}</td>
+                                <td>{{""}}</td>
+                            </tr>
+
+                            <tr>
+                                <th class="text-start">Méthodes AGILE - KANBAN</th>
+                                <td><a href="https://youtu.be/i2-WWbYJn_w?si=zqUruCp--BgnfpqU">Tuto &nbsp;</a></td>
                                 <td>{{""}}</td>
                                 <td>{{""}}</td>
                             </tr>
