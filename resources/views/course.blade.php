@@ -110,18 +110,98 @@
                             <table class="table">
                                 <tbody>
                                     <tr>
-                                        <th class="expand-col-60 text-start">01. Introduction au cours</th>
-                                        <td class="expand-col-20"><a href="#">Diapo &nbsp; <i class="fas fa-download"></i></a></td>
+                                        <th class="expand-col-60 text-start">00. Introduction au cours</th>
+                                        <td class="expand-col-20"><a href="#">Diapos &nbsp; <i class="fas fa-download"></i></a></td>
                                         <td class="expand-col-20">{{"PDF"}}</td>
                                         <td>{{""}}</td>
                                     </tr>
 
                                     <tr>
-                                        <th class="text-start">02. </th>
-                                        <td>Diapo</td>
+                                        <th class="text-start">A &minus; 01. Déterminer le contexte du projet. &#42;</th>
+                                        <td><a href="#">Diapos &nbsp; <i class="fas fa-download"></i></a></td>
                                         <td>{{""}}</td>
                                         <td>{{""}}</td>
                                     </tr>
+
+                                    <tr>
+                                        <th class="text-start">A &minus; 2. Rechercher de l'information sur Internet.</th>
+                                        <td><a href="#">Diapos &nbsp; <i class="fas fa-download"></i></a></td>
+                                        <td>{{"PDF"}}</td>
+                                        <td>{{""}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-start">B &minus; 3. Conception visuel d'un site Web &amp; Marquette.</th>
+                                        <td><a href="#">Diapos &nbsp; <i class="fas fa-download"></i></a></td>
+                                        <td>{{""}}</td>
+                                        <td>{{""}}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th class="text-start">A &minus; 4. Planification des tâches. &#42;</th>
+                                        <td><a href="#">Diapos &nbsp; <i class="fas fa-download"></i></a></td>
+                                        <td>{{""}}</td>
+                                        <td>{{""}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-start">A &minus; 4.1. Techniques de planification AGILE</th>
+                                        <td><a href="#">Diapos &nbsp; <i class="fas fa-download"></i></a></td>
+                                        <td>{{""}}</td>
+                                        <td>{{""}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-start">A &minus; 4.2. Techniques de gestion de temps.</th>
+                                        <td><a href="#">Diapos &nbsp; <i class="fas fa-download"></i></a></td>
+                                        <td>{{""}}</td>
+                                        <td>{{""}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-start">A &minus; 5. Assurer le suivi de l'évolution du projet.</th>
+                                        <td><a href="#">Diapos &nbsp; <i class="fas fa-download"></i></a></td>
+                                        <td>{{""}}</td>
+                                        <td>{{""}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-start">B &minus; 6. Programmation d'interface Web. &#42;</th>
+                                        <td><a href="#">Diapos &nbsp; <i class="fas fa-download"></i></a></td>
+                                        <td>{{""}}</td>
+                                        <td>{{""}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-start">B &minus; 7. Programmation de la logique applicative du côté client.</th>
+                                        <td><a href="#">Diapos &nbsp; <i class="fas fa-download"></i></a></td>
+                                        <td>{{""}}</td>
+                                        <td>{{""}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-start">B &minus; 8. Déboguer la syntaxe du code. &#42;</th>
+                                        <td><a href="#">Diapos &nbsp; <i class="fas fa-download"></i></a></td>
+                                        <td>{{""}}</td>
+                                        <td>{{""}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-start">B &minus; 9. Tests fonctionnels.</th>
+                                        <td><a href="#">Diapos &nbsp; <i class="fas fa-download"></i></a></td>
+                                        <td>{{""}}</td>
+                                        <td>{{""}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-start">A &minus; 10. Déploiement de l'application Web. &#42;</th>
+                                        <td><a href="#">Diapos &nbsp; <i class="fas fa-download"></i></a></td>
+                                        <td>{{""}}</td>
+                                        <td>{{""}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-start">A &minus; 11. Assurer l’utilisatilisabilité de l’application Web.</th>
+                                        <td><a href="#">Diapos &nbsp; <i class="fas fa-download"></i></a></td>
+                                        <td>{{""}}</td>
+                                        <td>{{""}}</td>
+                                    </tr>
+                                    <!-- tr>
+                                        <th class="text-start"></th>
+                                        <td><a href="#">Diapos &nbsp; <i class="fas fa-download"></i></a></td>
+                                        <td>{{""}}</td>
+                                        <td>{{""}}</td>
+                                    </tr -->
 
                                 </tbody>
                             </table>
