@@ -26,7 +26,7 @@
                             <tbody>
                             <tr>
                                 <th class="col-6 text-start">{{"Session"}}</th>
-                                <td class="col-2">{{"Aucune"}}</td>
+                                <td class="col-2">{{"Automne"}}</td>
                                 <td class="col-2">{{""}}</td>
                             </tr>
 
@@ -39,7 +39,7 @@
 
                             <tr>
                                 <th class="col-6 text-start">Période de cours</th>
-                                <td class="col-2">{{""}}</td>
+                                <td class="col-2">{{"Mardi 18h30-21h30 (en ligne) | Jeudi 18h30-21h30 (en ligne)"}}</td>
                                 <td class="col-2">{{""}}</td>
                             </tr>
 
@@ -199,8 +199,8 @@
                                     <!-- tr>
                                         <th class="text-start"></th>
                                         <td><a href="#">Diapos &nbsp; <i class="fas fa-download"></i></a></td>
-                                        <td>{{""}}</td>
-                                        <td>{{""}}</td>
+                                        <td>{ {""}}</td>
+                                        <td>{ {""}}</td>
                                     </tr -->
 
                                 </tbody>
@@ -211,5 +211,86 @@
             </div>
         </div>
     @endif
+
+    <div class="py-6">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 text-gray-900">
+                    <h3 class="mb-3  text-2xl"><b>{{ __("Travaux Pratiques") }}</b></h3>
+                    <div>
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <th class="expand-col-60 text-start">Devoir 1 - Cahier des charges (CDC)</th>
+                                <td class="expand-col-20"><a href="#">PDF &nbsp; <i class="fas fa-download"></i></a></td>
+                                <td class="expand-col-20">{{""}}</td>
+                                <td>{{""}}</td>
+                            </tr>
+
+                            <tr>
+                                <th class="text-start">Devoir 2 - Planification </th>
+                                <td><a href="#">PDF &nbsp; <i class="fas fa-download"></i></a></td>
+                                <td>{{""}}</td>
+                                <td>{{""}}</td>
+                            </tr>
+
+                            <tr>
+                                <th class="text-start">Devoir 3 - Hébergement </th>
+                                <td><a href="#">PDF &nbsp; <i class="fas fa-download"></i></a></td>
+                                <td>{{""}}</td>
+                                <td>{{""}}</td>
+                            </tr>
+                            <tr>
+                                <th class="text-start">Mini-test</th>
+                                <td><a href="#">Lien &nbsp;</a></td>
+                                <td>{{"Résultat"}}</td>
+                                <td>{{""}}</td>
+                            </tr>
+
+                            <tr>
+                                <th class="text-start">Projet</th>
+                                <td><a href="#">PDF &nbsp; <i class="fas fa-download"></i></a></td>
+                                <td>{{""}}</td>
+                                <td>{{""}}</td>
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-6">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 text-gray-900">
+                    <h3 class="mb-3  text-2xl"><b>{{ __("Autres sites/documents utiles") }}</b></h3>
+                    <div>
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <th class="expand-col-60 text-start">Utilisation appropriée de l'IA en tant que développeur web</th>
+                                <td class="expand-col-20"><a href="#">PDF &nbsp; <i class="fas fa-download"></i></a></td>
+                                <td class="expand-col-20">{{""}}</td>
+                                <td>{{""}}</td>
+                            </tr>
+
+                            <tr>
+                                <th class="text-start">Méthodes AGILE </th>
+                                <td><a href="#">PDF &nbsp; <i class="fas fa-download"></i></a></td>
+                                <td>{{""}}</td>
+                                <td>{{""}}</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </x-app-layout>
