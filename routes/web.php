@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function (Request $request) {
-    return Redirect::route('home', [$request]);
+
+Route::get('/', function () {
+    return Redirect::route('home', []);
 });
+
 Route::get('/about', function () {
     abort(404);
 });
@@ -27,9 +29,32 @@ Route::get('/home', function (Request $request) {
 })->name("home");
 
 
+Route::prefix('/cours')->name('course.')->group(function () {
+    Route::get('/', function (Request $request) {
+        return view('course', [$request]);
+    })->name("index");
+
+    Route::get('/420-7A4-FE', function (Request $request) {
+        abort(404);
+    })->name("c420");
+
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
 
 
-Route::prefix('/test')->name('test.')->group(function () {
+
+require __DIR__.'/auth.php';
+
+Route::prefix('/test-x')->name('test.')->group(function () {
 
     Route::get('/laravel', function () {
         return view('welcome');
@@ -52,7 +77,6 @@ Route::prefix('/test')->name('test.')->group(function () {
     })->where([
         'id' => '[0-9]+',
         'title' => '[a-z0-9\-]+',
-    ])->name("compose ");
+    ])->name("compose-x");
 
 });
-
