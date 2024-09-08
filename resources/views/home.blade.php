@@ -646,14 +646,14 @@ $skills = array(
                             $side = ($i % 2 == 0) ? "fadeInLeft" : "fadeInRight";
                             ?>
 
-                            <div class="col-md-6 animate-box" data-animate-effect="<?= $side ?>">
+                            <div class="col-md-6 animate-box" data-animate-effect="{{$side}}">
                                 <div class="progress-wrap">
-                                    <h3><?= $value[0] ?></h3>
+                                    <h3>{{ $value[0] }}</h3>
                                     <div class="progress">
-                                        <div class="progress-bar color-<?= $value[2] ?>" role="progressbar"
-                                             aria-valuenow="<?= $value[1] ?>"
+                                        <div class="progress-bar color-{{$value[2]}}" role="progressbar"
+                                             aria-valuenow="{{$value[1]}}"
                                              aria-valuemin="0" aria-valuemax="100" style="width:<?= $value[1] ?>%">
-                                            <span><?= $value[1] ?>%</span>
+                                            <span>{{$value[1]}}%</span>
                                         </div>
                                     </div>
                                 </div>
@@ -685,7 +685,7 @@ $skills = array(
                                         <div class="panel-heading" role="tab" id="headingOne">
                                             <h4 class="panel-title">
                                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    Master Degree Computer Science
+                                                    Master of Degree Computer Science
                                                 </a>
                                             </h4>
                                         </div>
@@ -712,7 +712,7 @@ $skills = array(
                                         <div class="panel-heading" role="tab" id="headingFour">
                                             <h4 class="panel-title">
                                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                    Master Degree Software Engineering
+                                                    Master Degree of Software Engineering
                                                 </a>
                                             </h4>
                                         </div>
