@@ -11,8 +11,8 @@
 
 $exp_year = 4; //$prop_object->expertise_year();
 
-$projects = 6; //$prop_object->project();
-$clients = 19; //$prop_object->client();
+$projects = 9; //$prop_object->project();
+$clients = 17; //$prop_object->client();
 $partners = 2; //$prop_object->partner();
 
 /// --- --- SECTION LIFE STASTISTICS PANEL (bg-images) --- ---
@@ -49,7 +49,7 @@ $skills = array(
     1 => ["Python", 90, 1],
     ["Java/Kotlin", 80, 2],
     ["HTML5/CSS", 90, 3],
-    ["Flutter/Dart", 90, 4],
+    ["Flutter/Dart", 95, 4],
     ["C/C++", 90, 5],
     ["JavaScript", 40, 6],
     //["Arduino", 70, 7],
@@ -601,7 +601,7 @@ $skills = array(
                         <div class="col-md-3 text-center animate-box">
                             <span class="colorlib-counter js-counter" data-from="0"
                                   data-to= {{$clients}}  data-speed="5000" data-refresh-interval="50"></span>
-                            <span class="colorlib-counter-label">Clients</span>
+                            <span class="colorlib-counter-label">Partners</span>
                         </div>
                         <div class="col-md-3 text-center animate-box">
                             <span class="colorlib-counter js-counter" data-from="0"
@@ -628,10 +628,14 @@ $skills = array(
                     <div class="row">
                         <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
                             <p>
-                                The programming languages that I have been able to learn and work with, the rough
+                                <!-- The programming languages that I have been able to learn and work with, the rough
                                 statistics below are the
                                 result of years of learning and practice. <br>I have already worked with one of each
-                                language described in my projects
+                                language described in my projects -->
+
+                                The programming languages I've had to learn and work with, the statistics below are the
+                                result of my curiosity, learning and years of practice. <br>
+                                I've already worked with one of each of the languages listed below in my projects.
                             </p>
                         </div>
                         <?php
@@ -916,7 +920,7 @@ $skills = array(
                     <div class="row">
                         <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
                             <div class="project"
-                                 style="background-image: url({{"images/img-projet-exploress-1.jpeg"}}); background-size: cover;">
+                                 style="background-image: url({ {"images/img-projet-exploress-1.jpeg"}}); background-size: cover;">
                                 <div class="desc">
                                     <div class="con">
                                         <h3><a href="https://exploress.space/home" target="_blanc">Exploress
