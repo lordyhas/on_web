@@ -1219,7 +1219,7 @@ $skills = array(
                                             <li><a href="https://github.com/lordyhas" style="text-decoration: none;">GitHub</a></li>
                                             <li><a href="https://stackoverflow.com/users/14639814/lordyhas"
                                                    style="text-decoration: none;">Stackoverflow</a></li>
-                                            <li><a href="" style="text-decoration: none;">Blog</a></li>
+                                            <li><a href="{{route("course.index")}}" style="text-decoration: none;">Course</a></li>
                                             <li><a href="https://www.termsfeed.com/live/fe72a31c-7813-49c2-aa4b-871b097506fb"
                                                    style="text-decoration: none;">Terms of Service</a></li>
                                         </ul>
