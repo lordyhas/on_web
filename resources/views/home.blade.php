@@ -1141,7 +1141,7 @@ $skills = array(
                                     <p>
                                         <a style="text-decoration: none;" target="_blank"
                                           href="https://www.google.com/maps/place/Quebec/">
-                                            Sherbrooke, QC, - Canada.
+                                            Sherbrooke, QC, Canada.
                                         </a>
                                     </p>
                                 </div>
@@ -1271,20 +1271,20 @@ $skills = array(
 <!-- jQuery Easing -->
 <script src="{{asset("js/jquery.easing.1.3.js")}}"></script>
 <!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
+<script src="{{asset("js/bootstrap.min.js")}}"></script>
 <!-- Waypoints -->
-<script src="js/jquery.waypoints.min.js"></script>
+<script src="{{asset("js/jquery.waypoints.min.js")}}"></script>
 <!-- Flexslider -->
-<script src="js/jquery.flexslider-min.js"></script>
+<script src="{{asset("js/jquery.flexslider-min.js")}}"></script>
 <!-- Owl carousel -->
-<script src="js/owl.carousel.min.js"></script>
+<script src="{{asset("js/owl.carousel.min.js")}}"></script>
 <!-- Counters -->
-<script src="js/jquery.countTo.js"></script>
+<script src="{{asset("js/jquery.countTo.js")}}"></script>
 
 
 <!-- MAIN JS -->
-<script src="js/main.js"></script>
-<script src="/js/modal.js"></script>
+<script src="{{asset("js/main.js")}}"></script>
+<script src="{{asset("/js/modal.js")}}"></script>
 
 </body>
 </html>
